@@ -114,7 +114,7 @@ function AuthLayout({children, history}) {
 
     useEffect(() => {
         if(localStorage.getItem(TOKEN)){
-            getUserInfo()
+            getUserInfo().catch(() => history.push(SIGN_IN_PATH))
         } else {
             history.push(SIGN_IN_PATH)
         }
