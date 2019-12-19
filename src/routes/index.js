@@ -23,9 +23,9 @@ const ROUTES = () => (
         <Switch>
           <Route path={DASHBOARD_PATH} component={Dashboard} />
           <Route path={TRANSACTIONS_PATH} component={RecentTransactions} />
+          <Route component={Dashboard} />
         </Switch>
       </AuthLayout>
-      <Redirect to={Dashboard} />
     </Switch>
   </Router>
 );

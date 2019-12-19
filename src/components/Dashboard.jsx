@@ -31,17 +31,11 @@ const Dashboard = () => {
     });
   };
 
-  const resetFields = () => {
-    setAmount(null);
-    setSelectedUser(null);
-  };
-
   const handleSubmit = async () => {
     try {
       await createTransaction(selectedUser, amount);
       await getUserInfo();
       showNotification();
-      resetFields();
     } catch (e) {}
   };
 
