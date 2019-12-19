@@ -1,4 +1,4 @@
-import {LOGIN_SUCCESS, GET_USER_SUCCESS} from "./actions";
+import { LOGIN_SUCCESS, GET_USER_SUCCESS } from './actions';
 
 export const initialState = {
   isLoading: false,
